@@ -1,7 +1,11 @@
 div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    background-color: aqua;
+    width: 400px;
+    height: 300px;
+    overflow: auto;
 }
 
 img {

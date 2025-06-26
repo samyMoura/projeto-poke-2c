@@ -1,8 +1,34 @@
-.Menu {
-   display: inline-flex;
-   flex-direction: row;
-   width: 100%;
-   min-width: 100%;
-   aligh-items: center;
-    
-}
+const Menu = () => {
+    return (
+        <div className="bg-pink-100 shadow-md p-4 rounded-xl">
+            <ul className="flex space-x-4 justify-center">
+                <li className="nav-item">
+                    <a
+                        className="text-pink-700 font-semibold hover:text-white hover:bg-pink-500 transition-colors px-4 py-2 rounded-lg"
+                        href="/home"
+                    >
+                        Home
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a
+                        className="text-pink-700 font-semibold hover:text-white hover:bg-pink-500 transition-colors px-4 py-2 rounded-lg"
+                        href="/pokegrid"
+                    >
+                        PokeGrid
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a
+                        className="text-pink-700 font-semibold hover:text-white hover:bg-pink-500 transition-colors px-4 py-2 rounded-lg"
+                        href="/pokeflex"
+                    >
+                        PokeFlex
+                    </a>
+                </li>
+            </ul>
+        </div>
+    );
+};
+
+export default Menu;
